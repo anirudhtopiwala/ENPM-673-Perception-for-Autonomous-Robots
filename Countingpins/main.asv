@@ -1,0 +1,44 @@
+clc; clear;close all;
+img = imread('TestImgResized.jpg');
+% img = imread('test2.jpeg'); % Tested on other images
+
+% % Increasing Contrast
+% img = imadjust(img,stretchlim(img),[]);
+o=0;
+
+%% This section of code is for function countcolor1
+%Separating out color planes and then fusing them to remove transparent and white pins
+% For Red
+img_r= imsubtract(img(:,:,1),rgb2gray(img));
+% For Green
+img_g= imsubtract(img(:,:,2),rgb2gray(img));
+%  For Blue
+img_b(:,:,3)= imsubtract(img(:,:,3),rgb2gray(img));
+% Mixing images
+mixofrg= imfuse(img_r,img_g);
+imgfused= imfuse(mixofrg, img_b);
+imgfused=rgb2gray(imgfused);
+
+%% Using the Function Gettotalpins to get the number of pins
+[bimg, numpin]= gettotalpins(img, imgfused,o);
+%%  Using the function countcolors to get the count of each color
+[reds, greens,blues,yellows]= countcolors(img,imgfused);
+
+
+%%
+% Using the function count colors 2 to get a count
+
+[bimgr,numpinr,bimgb,numpinb,bimgg,numping,numpiny]= countcolors2(img);
+figure
+%%
+% Calculating white and transparent pins
+
+[numpinwt] = whitetransparent(img,numpin);
+
+% therefore the white and transparent pins are
+
+whitetransparent= numpinwt-numpin;
+
+    
+
+
