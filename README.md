@@ -15,19 +15,17 @@ The above implementation has been carried out on MATLAB 2017a. Also note that fo
 
 Lane Detection: Detected and tracked lanes from the video given. Turn Prediction is also included.
 
-<p align="left">
-<img src="https://github.com/anirudhtopiwala/ENPM-673-Perception-for-Autonomous-Robots/blob/master/LaneDetection/Output/challengevideo.gif">
+<p align="center">
+<img src="https://github.com/anirudhtopiwala/ENPM-673-Perception-for-Autonomous-Robots/blob/master/LaneDetection/Output/projectvideo.gif">
 </p>
-<p align="right">
-<img src="https://github.com/anirudhtopiwala/ENPM-673-Perception-for-Autonomous-Robots/blob/master/VisualOdometry/OutPut/Visual%20Odometry.gif">
-</p>
+
 
 ### Visual Odometry
 
 Calculated the trajectory of a camera inside a moving car. The car circles around a block. Comparisons between matlab used Function and User Defined Functions are also made.
 
 <p align="center">
-<img src="https://github.com/anirudhtopiwala/ENPM-673-Perception-for-Autonomous-Robots/blob/master/LaneDetection/Output/challengevideo.gif">
+<img src="https://github.com/anirudhtopiwala/ENPM-673-Perception-for-Autonomous-Robots/blob/master/VisualOdometry/OutPut/Visual%20Odometry.gif">
 </p>
 
 ### Buoy Detection
