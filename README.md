@@ -33,7 +33,7 @@ Calculated the trajectory of a camera inside a moving car. The car circles aroun
 Continuously tracked 3 differently colored underwater buoys.
 
 <p align="center">
-<img src="https://github.com/anirudhtopiwala/ENPM-673-Perception-for-Autonomous-Robots/blob/master/Buoy%20Detection%20and%20ColorSegmentation/Output/Part3/Final.gif">
+<img src="https://github.com/anirudhtopiwala/ENPM-673-Perception-for-Autonomous-Robots/blob/master/Buoy%20Detection%20and%20ColorSegmentation/Output/Part3/ColorSegmentation/Final.gif">
 </p>
 
 ### Traffic Sign Detection
